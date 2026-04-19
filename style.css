@@ -1,19 +1,21 @@
 * {
-    padding: 0 ;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 body {
     background: hsla(307, 93%, 84%, 1);
     background: linear-gradient(90deg, hsla(307, 93%, 84%, 1) 0%, hsla(256, 96%, 44%, 1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .box {
     border: 2px solid #fff;
     border-radius: 20px;
-    width:50%;
+    width: 50%;
     height: 300px;
     margin: 215px auto;
     display: flex;
@@ -21,14 +23,62 @@ body {
     justify-content: center;
     padding: 50px;
 }
+
 .box-clock {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .box-clock-hour, .box-clock-minute, .box-clock-second, span {
     position: relative;
     font-size: 140px;
     color: #fff;
+}
+
+.box-utc {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 0px 20px;
+}
+
+.box-utc-date, .box-utc-location {
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.button {
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.box-utc-location:hover, .box-utc-date:hover {
+    background-color: black;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
